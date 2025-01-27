@@ -1,0 +1,29 @@
+* {
+    margin:0;
+    padding:0;
+}/* To select all */
+
+div p {
+    color: purple;
+} /* This is to only select the <p> inside the div*/
+
+ul.orange > li {
+    color: orange
+} /* CHild and parent element*/ 
+
+h1 + p { 
+    color: teal
+} /* This would only work with the closest p to h1*/ 
+
+input[type = "text"]{
+    border: 2px solid blue; 
+}
+
+/* hover mouse over link, something change, pseudo class*/
+a: hover { 
+    color: red;
+}
+
+p { font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px} /* not all browser support all type of fonds*/
+
