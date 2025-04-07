@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="music.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container"> 
+    <div class="music-player">
+        <div class="song-title"> Song Title</div>
+        <div class="display">
+           
+            <img id="greenFly" class="flyer" src="image/yellow_fly.png" alt="green sprite">
+            <img id="blueFly" class="flyer1" src="image/blue_fly.png" alt="blue sprite">
+            <img id="pinkFly" class="flyer" src="image/purple_fly.png" alt="pink sprite">
+            <div class="loader">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                
+            </div>
+            <div id="supershyBackground" class="animated-bg"></div>
+            <video id="loop" autoplay muted loop style="display: none;">
+                <source src="loop.mp4" type ="video/mp4">
+            </video>
+
+            <div class="progressBox">
+            <input type="range" class="slide"  id="progressBar"> 
+            </div>
+            <div id="volume-control">
+                <div id="volume-label"></div>
+                <input id ="volumeSlider" class="slide" type="range" min="0" max="1" step="0.01" value="0.5">
+            </div>
+        </div>
+        
+        <div class="control"> 
+            <button id="prev"><img src="image/green.png" id="prev-img"></button>
+            <button id="play-button"><img src="image/white.png" id="play-icon"></button>
+            <button id="next"><img src="image/pink.png" id="next-img"></button>
+            <audio id="audio"></audio>
+        </div>
+    </div>
+</div>
+<script src="music.js"></script>
+</body>
+</html>
