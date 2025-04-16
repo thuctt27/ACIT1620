@@ -1,0 +1,126 @@
+<!-- class -?  Attributes or properties
+ object contain attribute and property
+ student is properties: id, name, gradyears, courses, email, phone (attribute)
+ We create objects: cars
+ attribute: year, make,model, engine(relate to property of a class)
+ behavior (represent with method) is associte w methods, function (check pass/fail, check attendance for student)
+  -->
+
+  <!-- Chevy(object) - has property (make, model)-->
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prequalification</title>
+    <script> 
+        let chevy = {
+            make: "Chevy",
+            model: "Bel Air",
+            year: 1957,
+            passengers: 2,
+            convertible: false,
+            mileage: 1021,
+            started: false,
+            start: function() {
+                this.started = true;
+            },
+            stop: function() {
+                this.started = false;
+            },
+            drive: function(){
+                if (this.started = True){
+                    alert(this.make + " " + this.model + "goes zoom zoom");
+                }
+                else {
+                    alert("YOu need to start the engine first")
+                }
+            }
+        };
+        let fiat ={
+            make:"fiat",
+            model:"500",
+            year: 1957,
+            color: "Medium Blue",
+            passengers: 2,
+            convertible: false,
+            mileage: 88000,
+            started: false,
+            start: function() {
+                this.started = true;
+            },
+            stop: function() {
+                this.started = false;
+            },
+            drive: function(){
+                if (this.started = true){
+                    alert(this.make + " " + this.model + "goes zoom zoom");
+                }
+                else {
+                    alert("YOu need to start the engine first")
+                }
+            }
+        };
+        let taxi ={
+            make:"Taxi",
+            model:"360",
+            year: 2016,
+            color: "Sky Purple",
+            passengers: 4,
+            convertible: true,
+            mileage: 632178,
+            started: false,
+            start: function() {
+                this.started = true;
+            },
+            stop: function() {
+                this.started = false;
+            },
+            drive: function(){
+                if (this.started = true){
+                    alert(this.make + " " + this.model + "goes zoom zoom");
+                }
+                else {
+                    alert("YOu need to start the engine first")
+                }
+            }
+        };
+<!-- For first lecture-->
+    //     function prequal(car){  
+    //         if (car.mileage > 10000){
+    //             return false;
+    //         }
+    //         else if (car.year > 1960){
+    //             return false;
+    //         }
+    //     }
+    //     let worthALook = prequal(taxi);
+    // if (worthALook == true){
+    //     console.log("You gotta check our this " + taxi.make + " " + taxi.model);
+    // }
+    // else {
+    //     console.log("You should really pass on the" + taxi.make + " " + taxi.model); 
+    // }
+
+    // function isWorthALook(didQualify,car){
+    //     if (didQualify){
+    //         console.log("You gotta check our this " + car.make + " " + car.model);
+    //         }
+    
+    // else {
+    //     console.log("You should really pass on the" + car.make + " " + car.model);
+    // }}
+    // isWorthALook(prequal(taxi), taxi)
+    // isWorthALook(prequal(fiat), fiat)
+    // isWorthALook(prequal(chevy), chevy)
+
+<!-- For drive method demonstration, lecture 3 -->
+    fiat.start();
+    fiat.drive();
+    fiat.stop()
+    </script>
+   </head>
+   <body>
+    
+   </body>
+   </html>
